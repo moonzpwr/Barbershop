@@ -36,6 +36,7 @@ img {
 
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
+
     padding: 130px 55px;
   }
 }
@@ -67,6 +68,7 @@ a {
   padding: 0;
   list-style: none;
 }
+
 
 .link {
   text-decoration: none;
