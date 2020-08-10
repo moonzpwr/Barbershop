@@ -4,8 +4,6 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-// GENERAL STYLES
-@import './utils/variables';
 @import './base/normalize';
 @import './components/common/general';
 @import './components/common/section';
@@ -20,3 +18,4 @@
 @import './components/section-price';
 @import './components/OurMasters';
 @import './components/section-beard';
+

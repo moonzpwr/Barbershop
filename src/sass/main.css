@@ -287,6 +287,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 84px 31px;
+
 }
 
 @media screen and (min-width: 480px) {
@@ -307,6 +308,7 @@ img {
   .container {
     max-width: 1200px;
     padding: 130px 55px;
+
   }
 }
 
@@ -315,6 +317,7 @@ img {
   padding: 0;
   list-style: none;
 }
+
 
 .section-name {
   font-weight: 600;
@@ -383,6 +386,7 @@ img {
   color: #ffffff;
   background-color: #303030;
 }
+
 
 .menu-list {
   color: #303030;
@@ -518,11 +522,13 @@ svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
   margin-bottom: 20px;
   font-style: 400;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+
   letter-spacing: 0.1px;
   color: #303030;
 }
@@ -565,6 +571,7 @@ svg {
   letter-spacing: 0.02em;
   color: #555555;
 }
+
 
 @media screen and (min-width: 480px) {
   .benefits-text {
