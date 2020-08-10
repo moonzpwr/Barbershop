@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./..\\images\\slider1.jpg":[["slider1.bafe887c.jpg","images/slider1.jpg"],"images/slider1.jpg"],"./..\\images\\slider1@x2.jpg":[["slider1@x2.9665cab4.jpg","images/slider1@x2.jpg"],"images/slider1@x2.jpg"],"./..\\images\\slider1-desk.jpg":[["slider1-desk.dd61a346.jpg","images/slider1-desk.jpg"],"images/slider1-desk.jpg"],"./..\\images\\Slider1-desk@x2.jpg":[["Slider1-desk@x2.87faf400.jpg","images/Slider1-desk@x2.jpg"],"images/Slider1-desk@x2.jpg"],"./..\\images\\footer-480.png":[["footer-480.08c42e29.png","images/footer-480.png"],"images/footer-480.png"],"./..\\images\\footer@2x-480.png":[["footer@2x-480.9f4936d2.png","images/footer@2x-480.png"],"images/footer@2x-480.png"],"./..\\images\\footer-768.png":[["footer-768.18277f57.png","images/footer-768.png"],"images/footer-768.png"],"./..\\images\\footer@2x-768.png":[["footer@2x-768.ca780af8.png","images/footer@2x-768.png"],"images/footer@2x-768.png"],"./..\\images\\footer-625.png":[["footer-625.d59065b8.png","images/footer-625.png"],"images/footer-625.png"],"./..\\images\\footer@2x-625.png":[["footer@2x-625.a5f68618.png","images/footer@2x-625.png"],"images/footer@2x-625.png"],"./..\\images\\background-price.png":[["background-price.30825f56.png","images/background-price.png"],"images/background-price.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./sass/main.scss");
@@ -221,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49337" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55074" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
