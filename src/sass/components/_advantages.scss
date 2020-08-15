@@ -54,10 +54,6 @@
   justify-content: space-between;
   margin-bottom: 20px;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1px;
   color: $primary-text-color;
 }
 
@@ -99,7 +95,7 @@
   display: flex;
   flex-wrap: wrap;
   // max-width: 370px;
-  height: 331px;
+  // height: 331px;
   @media screen and (min-width: $mobile) {
     justify-content: center;
     margin-right: 0;
@@ -123,12 +119,20 @@
   text-align: center;
   background-color: $secondary-background-color;
 
-  &:nth-child(odd) {
-    margin-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
   }
 
-  &:nth-child(2n) {
-    margin-top: 35px;
+  @media screen and (min-width: $mobile) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+    &:nth-child(2n) {
+      margin-top: 35px;
+    }
   }
 
   @media screen and (min-width: $tablet) {

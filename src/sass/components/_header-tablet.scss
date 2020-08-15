@@ -121,16 +121,32 @@
     p {
       width: 360px;
     }
-    .sliders {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      right: 39px;
-      top: 325px;
+    .image-number {
+      margin-left: auto;
+      display: block;
+      border: none;
+      width: 8px;
+      height: 2px;
+      background-color: #9da4bd;
     }
 
-    svg:not(:last-child) {
-      margin-bottom: 12px;
+    .sliders-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-direction: column;
+      width: 18px;
+      height: 30px;
+    }
+
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .is-check {
+      width: 18px;
+      background-color: #fff;
     }
   }
 
@@ -144,7 +160,7 @@
     pointer-events: all;
 
     width: 60px;
-    padding: 0px 0px 8px 0px;
+    padding: 2px 0px 8px 0px;
 
     font-weight: 600;
     font-size: 11px;

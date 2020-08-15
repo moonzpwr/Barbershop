@@ -121,6 +121,7 @@
 
   background-color: transparent;
   border: none;
+  outline: none;
 
   .menu-close {
     display: none;
@@ -236,6 +237,9 @@
 // ===
 
 .hero {
+  .title-container {
+    margin-bottom: 20px;
+  }
   h1 {
     display: inline-flex;
     align-items: center;
@@ -259,7 +263,6 @@
 
   h2 {
     margin-top: 0px;
-    margin-bottom: 20px;
 
     color: white;
     font-family: $font-title;
@@ -280,7 +283,7 @@
     letter-spacing: 0.02em;
   }
 }
-.sliders {
+.image-number {
   display: none;
 }
 

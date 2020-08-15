@@ -7,7 +7,7 @@
   margin-right: auto;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding-left: 159px;
     padding-right: 159px;
   }

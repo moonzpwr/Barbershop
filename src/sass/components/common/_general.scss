@@ -26,7 +26,7 @@ img {
 
   @media screen and (min-width: $mobile) {
     max-width: $mobile;
-    padding: 84px 31px;
+    // padding: 84px 31px;
   }
 
   @media screen and (min-width: $tablet) {
@@ -67,7 +67,6 @@ a {
   padding: 0;
   list-style: none;
 }
-
 
 .link {
   text-decoration: none;
