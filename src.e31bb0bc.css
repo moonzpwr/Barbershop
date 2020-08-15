@@ -496,6 +496,7 @@ a {
   padding: 0;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 .menu-button .menu-close {
   display: none;
@@ -586,6 +587,9 @@ a {
   pointer-events: all;
 }
 
+.hero .title-container {
+  margin-bottom: 20px;
+}
 .hero h1 {
   display: inline-flex;
   align-items: center;
@@ -606,7 +610,6 @@ a {
 }
 .hero h2 {
   margin-top: 0px;
-  margin-bottom: 20px;
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 48px;
@@ -624,7 +627,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.sliders {
+.image-number {
   display: none;
 }
 
@@ -732,15 +735,30 @@ a {
   .hero p {
     width: 360px;
   }
-  .hero .sliders {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 39px;
-    top: 325px;
+  .hero .image-number {
+    margin-left: auto;
+    display: block;
+    border: none;
+    width: 8px;
+    height: 2px;
+    background-color: #9da4bd;
   }
-  .hero svg:not(:last-child) {
-    margin-bottom: 12px;
+  .hero .sliders-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 18px;
+    height: 30px;
+  }
+  .hero .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero .is-check {
+    width: 18px;
+    background-color: #fff;
   }
 
   .back,
@@ -748,7 +766,7 @@ a {
     opacity: 1;
     pointer-events: all;
     width: 60px;
-    padding: 0px 0px 8px 0px;
+    padding: 2px 0px 8px 0px;
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -885,7 +903,7 @@ a {
   margin: 0 0 44px 0;
   color: #ffffff;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .info-client .title {
     justify-content: center;
   }
@@ -893,7 +911,7 @@ a {
 .info-client .button {
   display: block;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .info-client .button {
     margin-left: auto;
     margin-right: auto;
@@ -947,7 +965,7 @@ a {
 }
 .form-text {
   margin: 0;
-  padding: 4px 5px 4px 70px;
+  padding: 4px 10px 4px 70px;
   border-width: 0px;
   text-align: center;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
@@ -1187,6 +1205,14 @@ a {
 .about-us-text {
   margin-left: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .about-us-text {
+    max-width: 500px;
+  }
+}
+.about-us-text p {
+  margin-bottom: 20px;
+}
 .about-us-title {
   margin-bottom: 20px;
   margin-top: 0;
@@ -1256,9 +1282,6 @@ a {
   }
 }
 
-.about-us-text p {
-  margin-bottom: 20px;
-}
 .about-us-text .section-name {
   display: flex;
   align-items: center;
@@ -1330,10 +1353,6 @@ a {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1px;
   color: #303030;
 }
 
@@ -1378,7 +1397,6 @@ a {
 .boxes {
   display: flex;
   flex-wrap: wrap;
-  height: 331px;
 }
 @media screen and (min-width: 480px) {
   .boxes {
@@ -1404,12 +1422,19 @@ a {
   padding: 20px 24px 20px 24px;
   text-align: center;
   background-color: #f7f7f7;
+  margin-left: auto;
+  margin-right: auto;
 }
-.box:nth-child(odd) {
-  margin-right: 30px;
+.box:not(:last-child) {
+  margin-bottom: 15px;
 }
-.box:nth-child(2n) {
-  margin-top: 35px;
+@media screen and (min-width: 480px) {
+  .box:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .box:nth-child(2n) {
+    margin-top: 35px;
+  }
 }
 @media screen and (min-width: 768px) {
   .box {
@@ -1460,6 +1485,9 @@ a {
 .section-prices {
   background-image: url(/background-price.30825f56.png);
   background-color: #111319;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 84px 31px;
 }
 @media screen and (min-width: 480px) {
   .section-prices {
@@ -1471,11 +1499,13 @@ a {
 @media screen and (min-width: 768px) {
   .section-prices {
     width: 768px;
+    padding: 100px 39px;
   }
 }
 @media screen and (min-width: 1200px) {
   .section-prices {
-    width: 1200px;
+    width: 1280px;
+    padding: 130px 55px;
   }
 }
 
@@ -1547,6 +1577,7 @@ a {
 .price-list {
   display: flex;
   color: #9da4bd;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
   .price-list {
@@ -1772,22 +1803,18 @@ a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .beard-item {
-    width: calc((100% - 1 * 30px) / 1);
-    margin: 15px;
-  }
+.beard-item {
+  width: calc((100% - 1 * 30px) / 1);
+  margin: 15px;
 }
 @media screen and (min-width: 768px) {
   .beard-item {
     width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .beard-item {
     width: calc((100% - 4 * 30px) / 4);
-    margin: 15px;
   }
 }
 
