@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="./images/title.png" type="image/png">
     <!-- <link rel="shortcut icon" href="./images/title.png" type="image/png"> -->
   </head>
   <body>
@@ -85,7 +86,7 @@
       <footer class="footer">
         <div class="info-client">
           <form class="footer container form" autocomplete="off">
-            <h2 class="title" id="record">Онлайн-запись</h2>
+            <h2 class="title" id="regist">РЕГИСТРАЦИЯ</h2>
             <div class="group">
               <div class="data-send">
                 <label class="form-field"
@@ -101,11 +102,11 @@
                 <label class="form-field"
                   ><input
                     class="form-text form-tel"
-                    type="tel"
-                    name="tel"
+                    type="email"
+                    name="email"
                     placeholder=" "
                   />
-                  <span class="form-label"> Телефон&#42;</span>
+                  <span class="form-label"> E-mail&#42;</span>
                 </label>
               </div>
       
@@ -116,7 +117,16 @@
                   maxlength="135"
                   placeholder=" "
                 ></textarea>
-                <span class="form-label">сообщение</span>
+                <span class="form-label">Пароль</span>
+              </label>
+              <label class="comment">
+                <textarea
+                  class="form-text form-comment"
+                  name="comment"
+                  maxlength="135"
+                  placeholder=" "
+                ></textarea>
+                <span class="form-label"> Повторите пароль</span>
               </label>
             </div>
             <button type="button" class="button button-secondary">
