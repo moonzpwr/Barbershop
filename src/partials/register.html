@@ -1,39 +1,131 @@
-<form class="footer container form" autocomplete="off">
-    <h2 class="title">Онлайн-запись</h2>
-    <div class="group">
-      <div class="data-send">
-        <label class="form-field"
-          ><input
-            class="form-text form-name"
-            type="text"
-            name="name"
-            placeholder=" "
-          />
-          <span class="form-label"> Имя&#42;</span>
-        </label>
-
-        <label class="form-field"
-          ><input
-            class="form-text form-tel"
-            type="tel"
-            name="tel"
-            placeholder=" "
-          />
-          <span class="form-label"> Телефон&#42;</span>
-        </label>
-      </div>
-
-      <label class="comment">
-        <textarea
-          class="form-text form-comment"
-          name="comment"
-          maxlength="135"
-          placeholder=" "
-        ></textarea>
-        <span class="form-label">сообщение</span>
-      </label>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../images/title.png" type="image/png">
+  </head>
+  <body>
+    <header>
+        <!-- MAIN CONTAINER + BG-PIC -->
+        <div class="header-container_regist">
+          <div class="bg-pic">
+            <!-- LOGO -->
+            <a href="../index.html"><svg width="69" height="55" class="logo-icon">
+              <use href="../images/icons/main-sprite.svg#icon-Logo"></use>
+            </svg>
+          </a>
+            <button
+              type="button"
+              class="menu-button"
+              data-menu-button
+              aria-expanded="false"
+              aria-label="Переключатель мобильного меню"
+            >
+              <svg width="24" height="16">
+                <use
+                  class="menu-icon"
+                  href="../images/icons/main-sprite.svg#icon-menu_24px"
+                ></use>
+                <use
+                  class="menu-close"
+                  href="../images/icons/main-sprite.svg#icon-close_24px"
+                ></use>
+              </svg>
+            </button>
+            <!-- HIDDEN MENU BLOCK -->
+            <div class="main-menu" data-menu>
+              <nav id="menu">
+                <ul class="menu-list">
+                  <li><a href="../index.html#first">О нас</a></li>
+                  <li><a href="../index.html#second">Услуги и цены</a></li>
+                  <li><a href="../index.html#third">Мастера</a></li>
+                  <li><a href="../index.html#fourth">Контакты</a></li>
+                </ul>
+              </nav>
+              <address>
+                <a href="tel:+380441111111">+38 044 111 11 11</a>
+                <button type="button" class="header-button"  >ОНЛАЙН-ЗАПИСЬ</button>
+                <!-- <a href="../partials/register.html" class="header-button">РЕГИСТРАЦИЯ</a> -->
+              </address>
+              <ul class="soc-networks">
+                <li class="soc-list"><a href="#" lang="en">Instagram</a></li>
+                <li><a href="#" lang="en">Youtube</a></li>
+              </ul>
+            </div>
+            <!-- TITLES -->
+            <div class="hero">
+              <h1 lang="en">A HAIR SALON FOR MEN IN KYIV</h1>
+              <div class="title-container">
+                <h2 lang="en">BarberShop</h2>
+                <div class="sliders-container">
+                  <span class="image-number is-check"></span>
+                  <span class="image-number"></span>
+                  <span class="image-number"></span>
+                </div>
+              </div>
+              <p>
+                Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+                вкусом.
+              </p>
+              <div class="buttons-cont">
+                <button type="button" class="back siema-buttons-prev">Назад</button>
+                <button type="button" class="forward siema-buttons-next">
+                  Вперед
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="bg-pic_regist regist-container">
+      <form class="footer container form" autocomplete="off">
+        <h2 class="title">РЕГИСТРАЦИЯ</h2>
+        <div class="group">
+          <div class="data-send">
+            <label class="form_regist-field"
+              ><input
+                class="form_regist-text form_regist-name"
+                type="text"
+                name="name"
+                placeholder=" "
+              />
+              <span class="form_regist-label"> Имя&#42;</span>
+            </label>
+    
+            <label class="form_regist-field"
+              ><input
+                class="form_regist-text form_regist-tel"
+                type="email"
+                name="email"
+                placeholder=" "
+              />
+              <span class="form_regist-label"> E-mail&#42;</span>
+            </label>
+          </div>
+    
+          <label class="comment">
+            <textarea
+              class="form_regist-text form_regist-comment"
+              name="password"
+              maxlength="135"
+              placeholder=" "
+            ></textarea>
+            <span class="form_regist-label">Пароль</span>
+          </label>
+        </div>
+        <button type="button" class="button button-secondary">
+          отправить
+        </button>
+      </form>
     </div>
-    <button type="button" class="button button-secondary">
-      отправить
-    </button>
-  </form>
+      <script src="../index.js"></script>
+    <script src="../menu.js"></script>
+      </body>
+      </html>
+
