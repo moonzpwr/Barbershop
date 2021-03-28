@@ -1,6 +1,120 @@
+.header_register-container {
+    position: relative;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-bottom: 0px;
+  
+    overflow: hidden;
+  
+    @media screen and (min-width: $mobile) {
+      max-width: $mobile;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      max-width: $tablet;
+    }
+  
+    @media screen and (min-width: $desktop) {
+      max-width: 1280px;
+    }
+  }
 
-
-
+  .form_register {
+    width: 100%;
+    @media screen and (min-width: $desktop) {
+      padding: 140px 40px 193px 55px;
+    }
+    & .data-send {
+      @media screen and (min-width: $desktop) {
+        display: inline-flex;
+        flex-wrap: nowrap;
+      }
+    }
+  
+    &-field {
+      position: relative;
+      display: flex;
+  
+      margin-bottom: 44px;
+      @media screen and (min-width: $tablet) {
+        display: inline-flex;
+  
+        & + & {
+          margin-left: 30px;
+        }
+      }
+    }
+  
+    &-label {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      display: block;
+      margin: 0;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 1.36;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+  
+      color: rgba(157, 164, 189, 0.4);
+    }
+    &-text {
+      margin: 0;
+      padding: 4px 10px 4px 70px;
+      border-width: 0px;
+  
+      text-align: center;
+      border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+      color: $title-text-color;
+      background-color: #191c26;
+      &:hover,
+      &:focus {
+        border-color: $title-text-color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      @media screen and (min-width: $tablet) {
+        display: inline-flex;
+        width: 327px;
+      }
+      @media screen and (min-width: $desktop) {
+        &.form-name {
+          max-width: 270px;
+        }
+        &.form-tel {
+          max-width: 260px;
+        }
+      }
+  
+      &:hover + .form_register-label,
+      &:focus + .form_register-label {
+        color: $title-text-color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  
+    & .comment {
+      position: relative;
+      display: block;
+      margin-bottom: 44px;
+    }
+    &-comment {
+      padding: 15px 2px 0;
+      height: 76px;
+      text-align: start;
+      resize: none;
+      overflow: auto;
+      @media screen and (min-width: $tablet) {
+        width: 100%;
+      }
+    }
+  }
 
 
 
