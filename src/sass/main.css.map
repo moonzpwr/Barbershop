@@ -16,7 +16,9 @@
         "components/_advantages.scss",
         "components/_section-price.scss",
         "components/_OurMasters.scss",
-        "components/_section-beard.scss"
+        "components/_section-beard.scss",
+        "components/_register.scss"
+        
     ],
     "names": [],
     "file": "main.css"
