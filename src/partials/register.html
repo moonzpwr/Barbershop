@@ -11,7 +11,7 @@
     <!-- <link rel="shortcut icon" href="./images/title.png" type="image/png"> -->
   </head>
   <body>
-    <header>
+    <header class="bgc_header">
       <!-- MAIN CONTAINER + BG-PIC -->
       <div class="header_register-container">
         <div class="bg-pic">
@@ -81,8 +81,8 @@
         </div>
       </div>
     </header>
-     <div >
-      <form class="footer container form" autocomplete="off">
+     <div class="bgc_header">
+      <form class="footer container form bgc_form" autocomplete="off">
         <h2 class="title">Онлайн-запись</h2>
         <div class="group">
           <div class="data-send">
@@ -99,11 +99,11 @@
             <label class="form_register-field"
               ><input
                 class="form_register-text form_register-tel"
-                type="tel"
-                name="tel"
+                type="email"
+                name="email"
                 placeholder=" "
               />
-              <span class="form_register-label"> Телефон&#42;</span>
+              <span class="form_register-label"> E-mail&#42;</span>
             </label>
           </div>
   
@@ -114,7 +114,16 @@
               maxlength="135"
               placeholder=" "
             ></textarea>
-            <span class="form_register-label">сообщение</span>
+            <span class="form_register-label">Пароль</span>
+          </label>
+          <label class="comment">
+            <textarea
+              class="form_register-text form_register-comment"
+              name="comment"
+              maxlength="135"
+              placeholder=" "
+            ></textarea>
+            <span class="form_register-label">Повторите пароль</span>
           </label>
         </div>
         <button type="button" class="button button-secondary">

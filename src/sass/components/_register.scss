@@ -20,7 +20,12 @@
       max-width: 1280px;
     }
   }
-
+ .bgc_header {
+    background-color: $secondary-background-color;
+ }
+.bgc_form {
+    background-color: #191c26;
+}
   .form_register {
     width: 100%;
     @media screen and (min-width: $desktop) {
